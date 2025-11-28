@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.google-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.g-btn {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: #3c4043;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    height: 45px;
+    width: 200px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    transition: background-color 0.2s ease;
+}
+
+.g-btn:hover {
+    background-color: #f7f8f8;
+}
+
+.g-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.g-text {
+    font-weight: 500;
+}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="profile">
+    {% if user.picture %}
+      <img src="{{ user.picture }}" alt="profile picture" class="avatar">
+    {% endif %}
+    <h2>Hello, {{ user.name }} <small>[<a href="{{ url_for('logout') }}">Sign Out</a>]</small></h2>
+    <p>You are signed in with {{ user.email }}</p>
+
+
+   <i>
+      <font color="blue">
+         Date and Time: 
+        <strong>
+         <span id="time"></span>
+        </strong>           
+      </font>
+   </i>
+
+
+  </div>
+  <script>
+
+var today = new Date();
+document.getElementById('time').innerHTML=today;
+</script>
+{% endblock %}
