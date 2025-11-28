@@ -22,7 +22,7 @@ OAuth stands for Open Authorization and was implemented to achieve a connection 
 ## Project Structure and Installation
 The project is inside the folder named `Project` and contains two subfolders static(contains the style) and templates(Jinja2.0 templates that contains the HTML pages for UI). The project contains the `app.py` file that contains the routes and oauth configuration of the project. 
 To execute this project, follow the below steps
-- You can create Virtual Environment in Windows by suing the following commands:</br>
+- You can create Virtual Environment in Windows by using the following commands:</br>
 Follow the below steps in Windows</br>
 `python -m venv .venv`</br>
 To activate the Python Environment in Powershell Terminal `.venv\Scripts\Activate.ps1`
@@ -33,7 +33,7 @@ To activate the Python Environment in Powershell Terminal `.venv\Scripts\Activat
 ## Resources
 1. RealPython
 2. Stack Overflow
-3. Appwrite Google Authentical Tutorial from Youtube
+3. Appwrite Google OAuth Tutorial from Youtube
 4. OpenAI
 5. GFG
 

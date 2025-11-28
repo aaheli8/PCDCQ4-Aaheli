@@ -1,4 +1,6 @@
-from flask import Flask, render_template, session, redirect, url_for
+from flask import Flask, render_template, session, redirect, url_for, request
+from markupsafe import Markup
+from diamond import  generate_diamond
 from authlib.integrations.flask_client import OAuth
 from dotenv import load_dotenv
 import os
@@ -9,6 +11,8 @@ template_folder="templates" #Loading the templates from this folder
 
 app = Flask(__name__) #Using the Flask class
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "dev-key")
+
+
 
 # OAuth setup for Google 
 oauth = OAuth(app)
@@ -42,7 +46,7 @@ def authorize():
     }
     return redirect(url_for("profile"))
 
-@app.route("/profile") # shows the user details and the profile template shows the 
+@app.route("/profile", methods=["GET", "POST"]) # shows the user details and the profile template shows the 
 def profile():
     user = session.get("user")
     if not user:
